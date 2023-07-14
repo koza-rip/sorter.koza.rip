@@ -1,0 +1,49 @@
+#fldLeft    {
+    height: 308px;
+}
+
+#fldRight   {
+    height: 308px;
+}
+
+.idol {
+	width: 500px;
+}
+
+.idol .name {
+	width: 500px;
+}
+
+.idol .number {
+	width: 50px;
+	line-height: 50px;
+	border-radius: 25px;
+}
+
+.idol img {
+    max-width: 500px;
+	max-height: 308px;
+}
+
+.card {
+	width: 300px;
+  flex: 0 0 calc(100% / 6);
+}
+
+.card .name {
+	width: 300px;
+}
+
+.card .number {
+	width: 50px;
+	line-height: 50px;
+	border-radius: 25px;
+}
+
+.card img {
+    width: 300px;
+}
+
+.card-text {
+
+}

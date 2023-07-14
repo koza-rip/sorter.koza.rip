@@ -1,0 +1,13 @@
+# ignore all image files
+*.png
+*.jpg
+*.webp
+*.svg
+*.ico
+
+# ignore directories
+i/
+
+# ignore files
+test.html
+test2.html

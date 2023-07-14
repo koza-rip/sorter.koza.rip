@@ -1,0 +1,27 @@
+#fldLeft    {
+    height: 180px;
+}
+
+#fldRight   {
+    height: 180px;
+}
+
+.idol {
+	width: 180px;
+}
+
+.idol .name {
+	width: 180px;
+}
+
+.idol img {
+    width: 180px;
+}
+
+.card {
+	width: 150px;
+}
+
+.card img {
+    width: 150px;
+}

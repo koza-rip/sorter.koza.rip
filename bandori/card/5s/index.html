@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Bandori 5* Card Sorter</title>
+
+	<link type="text/css" rel="stylesheet" href="../../../css/style.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="../../../css/card.css"  media="screen,projection"/>
+
+	<style>
+		body {
+			background-image: url('../../../i/bandori/bandori.png');
+		}
+	</style>
+
+	<script type="text/javascript" src="../../../js/bestdori_api.js"></script>
+	<script type="text/javascript" src="../../../js/globals.js"></script>
+	<script type="text/javascript" src="../../../js/mod_k-factory.js"></script>
+	<script type="text/javascript" src="../../../js/fnc_main_card_v4_7.js"></script>
+	<script type="text/javascript" src="../../../js/fnc_data_v2_bandori_cards_5s.js"></script>
+
+	<link rel="icon" href="https://koza.rip/assets/Icon-Black.png">
+
+</head>
+
+<body onload="startup()">
+	<div class="wrapper">
+		<div class="header">
+			<a href="https://sorter.koza.rip/"><img height="152px" src="../../../i/bandori/logo.png" /></a>
+			<h1><img height="30px" src="../../../i/bandori/star.png" /><img height="30px" src="../../../i/bandori/star.png" /><img height="30px" src="../../../i/bandori/star.png" /><img height="30px" src="../../../i/bandori/star.png" /><img height="30px" src="../../../i/bandori/star.png" /> Card Sorter</h1>
+		</div>
+
+		<div align="center" class="battle box">
+
+			<table id="progressTable">
+				<thead>
+					<tr>
+						<td colspan="3" class="tb_header">Live #<span id="lblCount"></span><br>
+							<span id="lblProgress">0</span>% sorted of <span id="lblTotalCards">0</span> cards<br>
+							<div align="center"><span id="GaGprog"></span></div>
+						</td>
+					</tr>
+				</thead>
+			</table>
+			<table id="mainTable">
+				<tbody>
+					<tr>
+						<td id="fldLeft" class="idol" onClick="fnc_Sort(-1);" rowspan="2"><img src="../../../i/bandori/game.png"></td>
+						<td id="fldMiddleT" onClick="fnc_Sort(0);">BanG Dream!</td>
+						<td id="fldRight" class="idol" onClick="fnc_Sort(1);" rowspan="2"><img src="../../../i/bandori/game.png" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);"></td>
+					</tr>
+					<tr><td id="fldMiddleB" onClick="fnc_Undo();">Click to start!</td></tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3"><div align="center">
+							<input id="optImage" type="checkbox" checked></input>
+							<span class="tb_header">Display images while sorting
+							</span></div></td>
+						</tr>
+						<tr>
+							<td colspan="3"><div align="center">
+								<input id="optAgony" type="checkbox" checked></input>
+								<span class="tb_header">Disable ties and undos</span>
+							</span></div></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<br>
+			<div id="loader" style="display: none; text-align: center;">Loading...</div>
+			<table id="optTable" align="center"></table>
+			<br>
+			<div id="ranTable" width="640px" align="center" class="tb" style="display:none;">
+				<div>
+					<form>
+						<input type='button' value='Raw Text Results' onclick='OpenWnd()' style="background-color: #00ffdd;color: #444466;padding: 15px 32px;text-align: center;    text-decoration: none;  border:none;  display: inline-block;    font-size: 16px;
+						font-weight: bold;    font-family: 'Montserrat', 'sans-serif';    border: 2px solid #444466;    border-radius: 5px;">
+					</form>
+				</div>
+			</div>
+			<div class="style4" id="resultField">
+			</div>
+		</div>
+		<div class="credits" align="center"><p>Adapted from <a href="https://garupasorter.tumblr.com/">garupasorter.tumblr.com</a> and <a href="https://projectsekai-sorter.tumblr.com/">projectsekai-sorter.tumblr.com</a>. Original scripts by <a href="http://kouga.net/">migiwa from K-Factory</a>.<br />
+			Coded by <a href="https://svenxiety.xyz">Sven</a> and hosted by <a href="https://koza.rip">Koza</a>.<br />
+		Running off data provided by <a href="https://bestdori.com/">bestdori.com</a></p>
+		</div>
+	</body>
+	</html>
